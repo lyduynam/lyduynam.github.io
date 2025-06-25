@@ -6,7 +6,7 @@ export default function Home() {
     <div className="main-content ">
     
       <p className="text-[2em] font-bold">About me</p>
-      <p className="text-[1.2em] mt-[1em]">Hi, I'm <span className="font-bold">Nam</span>, a researcher and developer passionate about Human-Computer Interaction, Artificial Intelligence, and immersive technologies like Virtual and Augmented Reality. My work focuses on designing novel interaction techniques that enhance user experience and bridge the gap between humans and intelligent systems. Welcome to my personal site, feel free to explore my projects, publications, and ongoing research.</p>
+      <p className="text-[1.2em] mt-[1em]">Hi, I am <span className="font-bold">Nam</span>, a researcher and developer passionate about Human-Computer Interaction, Artificial Intelligence, and immersive technologies like Virtual and Augmented Reality. My work focuses on designing novel interaction techniques that enhance user experience and bridge the gap between humans and intelligent systems. Welcome to my personal site, feel free to explore my projects, publications, and ongoing research.</p>
       
       <div className="mt-[2em]">
         <p className="text-[1.2em] font-bold">Education</p>
@@ -25,9 +25,8 @@ export default function Home() {
             <p className="text-[1.1em] text-gray-600">University of Science, VNU-HCM</p>
             <p className="text-[0.9em] text-gray-500">2018 - 2022</p>
             <p className="text-[1em] mt-[0.5em] ">GPA: 3.96/4.0</p>
-            <p className="text-[1em] mt-[0.5em] italic">Thesis: "Design and Development of An Immersive Collaborative Virtual Environment
-            for Tour Guiding Training"</p>
-            <p className="text-[1em] mt-[0.5em] italic">Advisors:  Khanh-Duy Le, Minh-Triet Tran</p>
+            <p className="text-[1em] mt-[0.5em] italic">Thesis: Design and Development of An Immersive Collaborative Virtual Environment for Tour Guiding Training</p>
+            <p className="text-[1em] mt-[0.5em] italic">Advisors:  Dr. Khanh-Duy Le, Assoc. Prof. Minh-Triet Tran</p>
           </div>
         </div>
       </div>
