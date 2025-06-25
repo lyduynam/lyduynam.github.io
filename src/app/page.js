@@ -1,103 +1,91 @@
 import Image from "next/image";
+import Menu from "../components/menu";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="main-content ">
+    
+      <p className="text-[2em] font-bold">About me</p>
+      <p className="text-[1.2em] mt-[1em]">Hi, I'm <span className="font-bold">Nam</span>, a researcher and developer passionate about Human-Computer Interaction, Artificial Intelligence, and immersive technologies like Virtual and Augmented Reality. My work focuses on designing novel interaction techniques that enhance user experience and bridge the gap between humans and intelligent systems. Welcome to my personal site, feel free to explore my projects, publications, and ongoing research.</p>
+      
+      <div className="mt-[2em]">
+        <p className="text-[1.2em] font-bold">Education</p>
+        <div className="mt-[1em] space-y-[1.5em]">
+        
+          
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.3em] font-semibold">Master of Science in Computer Science</p>
+            <p className="text-[1.1em] text-gray-600">University of Science, VNU-HCM</p>
+            <p className="text-[0.9em] text-gray-500">2023 - Now</p>
+           
+          </div>
+          
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.3em] font-semibold">Bachelor of Science in Information Technology</p>
+            <p className="text-[1.1em] text-gray-600">University of Science, VNU-HCM</p>
+            <p className="text-[0.9em] text-gray-500">2018 - 2022</p>
+            <p className="text-[1em] mt-[0.5em] ">GPA: 3.96/4.0</p>
+            <p className="text-[1em] mt-[0.5em] italic">Thesis: "Design and Development of An Immersive Collaborative Virtual Environment
+            for Tour Guiding Training"</p>
+            <p className="text-[1em] mt-[0.5em] italic">Advisors:  Khanh-Duy Le, Minh-Triet Tran</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="mt-[2em]">
+        <p className="text-[1.2em] font-bold">Experience</p>
+        <div className="mt-[1em] space-y-[1.5em]">
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.3em] font-semibold">Researcher</p>
+            <p className="text-[1.1em] text-gray-600">SELAB, University of Science, VNU-HCM</p>
+            <p className="text-[0.9em] text-gray-500">2021 - Now</p>
+            <p className="text-[1em] mt-[0.5em] text-gray-700">Conducting research on Human-Computer Interaction, XR technologies, and AI-enabled interaction.</p>
+          </div>
+
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.3em] font-semibold">Teaching Assistant</p>
+            <p className="text-[1.1em] text-gray-600">University of Science, VNU-HCM</p>
+            <p className="text-[0.9em] text-gray-500">2022 - Now</p>
+            <p className="text-[1em] mt-[0.5em] text-gray-700">Intro2HCI, OOP, Web Development, Game/3D Application Development, Mobile Development, etc.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-[2em]">
+        <p className="text-[1.2em] font-bold">Skills</p>
+        <div className="mt-[1em] space-y-[1.5em]">
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.2em] font-semibold ">Technical Skills</p>
+            <div className="mt-[0.5em] flex flex-wrap gap-[0.5em]">
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">AR/VR/MR Development</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">Web Development</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">Mobile Development</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">ML Model Deployment</span>
+            </div>
+          </div>
+          
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.2em] font-semibold ">Programming Languages & Frameworks</p>
+            <div className="mt-[0.5em] flex flex-wrap gap-[0.5em]">
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">Unity</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">React.js</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">C#</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">Python</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">SQL</span>
+            </div>
+          </div>
+          
+          <div className="border-l-4 border-[#395a94] pl-[1em]">
+            <p className="text-[1.2em] font-semibold ">Others</p>
+            <div className="mt-[0.5em] flex flex-wrap gap-[0.5em]">
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">System Design</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">UX Design</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">User Study Design (sufficient)</span>
+              <span className="bg-gray-100 px-[0.5em] py-[0.25em] rounded text-[0.9em]">Statistical Analysis</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

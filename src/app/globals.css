@@ -1,8 +1,14 @@
 @import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #88b4ff;
+  --active-foreground: #395a94;
+  --text-primary: #000000;
+  --text-secondary: #b0b0b0;
+  --text-active: #395a94;
+  --border-color: #e6e6e6;
 }
 
 @theme inline {
@@ -16,11 +22,138 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --text-primary: #ededed;
+    --text-secondary: #888888;
+    --text-active: #88b4ff;
+    --border-color: #333333;
   }
 }
 
 body {
   background: var(--background);
+  color: var(--text-primary);
+  font-family: 'Neue Haas Grotesk Display Pro', Helvetica, Arial, sans-serif;
+}
+
+.main-container {
+
+}
+
+.menu {
+  padding: 1rem 1.5rem 1rem 1.5rem; 
+  margin: 5rem;
+  margin-top: 4.5rem;
+  width: 16em;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0;
+    padding: 3rem; 
+  }
+}
+
+.clickable {}
+
+.clickable:hover {
+  cursor: pointer;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bottom-border-line {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-border-line {
+  border-top: 1px solid var(--border-color);
+}
+
+.menu-item {
+  padding: 0.3em 0.1em;
+  font-size: 1em;
+  color: var(--text-primary);
+}
+.disabled {
+  color: var(--text-secondary);
+  cursor: default;
+}
+a:hover {
+  text-decoration: none;
+  color: var(--active-foreground);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+.menu-item:hover {
+
+ color: var(--foreground);
+  /* border-bottom: 3px solid var(--foreground); */
+  position: relative;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+
+}
+.menu-item.disabled:hover {
+
+  color: var(--text-secondary);
+  cursor: default;
+  text-decoration: none;
+}
+.menu-item.active {
+  color: var(--text-active);
+  
+  /* border-bottom: 4px solid var(--text-active); */
+}
+.main-content{
+  padding: 0rem 3rem 0rem 3rem;
+  margin-top: 0;
+  
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 75%;
+    margin-top: 5em;
+  }
+}
+.header-name{
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 48px; /* Adjust as needed */
+  line-height: 1.2;
+
+}
+
+@keyframes techgrid {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 40px 40px, 40px 40px;
+  }
+}
+
+.animate-techgrid {
+  animation: techgrid 6s linear infinite;
+}
+
+@keyframes xrfloat1 {
+  0% { transform: translateY(0) scale(1); opacity: 0.8; }
+  50% { transform: translateY(-24px) scale(1.08); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.8; }
+}
+@keyframes xrfloat2 {
+  0% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.7; }
+  50% { transform: translateY(-18px) rotate(6deg) scale(1.04); opacity: 1; }
+  100% { transform: translateY(0) rotate(0deg) scale(1); opacity: 0.7; }
+}
+@keyframes xrfloat3 {
+  0% { transform: translateY(0) scale(1); opacity: 0.7; }
+  50% { transform: translateY(12px) scale(1.12); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 0.7; }
+}
+
+.animate-xrfloat1 {
+  animation: xrfloat1 7s ease-in-out infinite;
+}
+.animate-xrfloat2 {
+  animation: xrfloat2 9s ease-in-out infinite;
+}
+.animate-xrfloat3 {
+  animation: xrfloat3 6s ease-in-out infinite;
 }
