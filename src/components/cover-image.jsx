@@ -120,7 +120,7 @@ const CoverImage = () => {
                                         eXtended Reality
                                     </span>
                                     <span className="cursor-default px-4 py-2 bg-white/5 backdrop-blur-sm rounded-full text-slate-200 text-sm font-medium border border-white/10 hover:bg-white/10 hover:border-white/20 transition-colors duration-200">
-                                        AI
+                                        Intelligent User Interfaces
                                     </span>
                                 </div>
                             </div>

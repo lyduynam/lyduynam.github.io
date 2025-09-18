@@ -35,18 +35,22 @@ export default function RootLayout({ children }) {
         <Header />
         <CoverImage />
         <div className="main-container">
-          <div className="flex sm:flex-row flex-col-reverse   justify-between w-full  h-full">
-           <div className="w-full sm:w-[25%] ">
-             <Menu />
-           </div>
-           
-            {children}
-            <div className="w-full sm:hidden block  ">
-             <MenuMobile />
-           </div>
+          <div className="flex sm:flex-row flex-col-reverse sm:space-x-24  justify-between  mt-[4em]  h-full px-24">
+            <div className="w-full sm:w-[20%]  ">
+              <Menu />
+            </div>
+            <div className="w-full sm:w-[65%]  ">
+              {children}
+            </div>
+            <div className="w-full sm:w-[15%]  ">
+              <div className="sm:hidden block  ">
+                <MenuMobile />
+              </div>
+            </div>
+
           </div>
         </div>
-      <Footer />
+        <Footer />
       </body>
     </html>
   );

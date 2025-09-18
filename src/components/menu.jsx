@@ -30,14 +30,13 @@ const Menu = () => {
         }
     ];
     return (
-        <div className="menu text-[1.2em] font-bold  sm:p-4 p-1  ">
+        <div className="menu text-[1em] font-bold ">
             {/* Greeting Section with Icons */}
-            <div className="mb-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
-                <div className="flex items-center space-x-3 mb-2">
-         
-                    <span className="text-lg font-semibold text-gray-800">👋 Welcome!</span>
+            <div className="mb-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
+                <div className="flex items-center space-x-2 mb-1">
+                    <span className="text-base font-semibold text-gray-800">👋 Welcome!</span>
                 </div>
-                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                <div className="flex items-center space-x-1 text-xs text-gray-600">
                     I'm Nam, a researcher passionate about HCI, XR, and AI technologies
                 </div>
               

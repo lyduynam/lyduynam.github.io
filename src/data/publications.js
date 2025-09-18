@@ -1,8 +1,53 @@
 export const publications = [
     {
         "Authors": [
+            "Khanh-Duy Le", "Duy-Nam Ly", "Thanh-Thai La", "Cuong Nguyen", "Morten Fjeld", "Tam V Nguyen", "Minh-Triet Tran"
+        ],
+        "Title": "Development and evaluation of a collaborative virtual reality system for tour guide training",
+        "Publication": "Virtual Reality 29, no. 3 (2025): 132",
+        "Volume": "29",
+        "Number": "3",
+        "Pages": "132",
+        "Year": "2025",
+        "Publisher": "Springer London",
+        "Link": "https://doi.org/10.1007/s10055-025-01206-0",
+        "Venue": "Springer VR",
+        "BibTex": `@article{le2025development,
+  title={Development and evaluation of a collaborative virtual reality system for tour guide training},
+  author={Le, Khanh-Duy and Ly, Duy-Nam and La, Thanh-Thai and Nguyen, Cuong and Fjeld, Morten and Nguyen, Tam V and Tran, Minh-Triet},
+  journal={Virtual Reality},
+  volume={29},
+  number={3},
+  pages={132},
+  year={2025},
+  publisher={Springer}
+}}`
+    },
+    {
+        "Authors": [
+            "Thien-Phuc Tran", "Minh-Quang Nguyen", "Minh-Triet Tran", "Tam V Nguyen", "Trong-Le Do", "Duy-Nam Ly", "Viet-Tham Huynh", "Khanh-Duy Le", "Mai-Khiem Tran", "Trung-Nghia Le"
+        ],
+        "Title": "Event-Enriched Image Analysis Grand Challenge at ACM Multimedia 2025",
+        "Publication": "arXiv preprint arXiv:2508.18904 (2025)",
+        "Volume": "",
+        "Number": "",
+        "Pages": "",
+        "Year": "2025",
+        "Venue": "arXiv",
+        "Link": "https://arxiv.org/abs/2508.18904",
+        "Publisher": "",
+        "BibTex": `@article{tran2025event,
+  title={Event-Enriched Image Analysis Grand Challenge at ACM Multimedia 2025},
+  author={Tran, Thien-Phuc and Nguyen, Minh-Quang and Tran, Minh-Triet and Nguyen, Tam V and Do, Trong-Le and Ly, Duy-Nam and Huynh, Viet-Tham and Le, Khanh-Duy and Tran, Mai-Khiem and Le, Trung-Nghia},
+  journal={arXiv preprint arXiv:2508.18904},
+  year={2025}
+}
+        `
+    },
+    {
+        "Authors": [
             "Shuhao Han", "Haotian Fan", "Fangyuan Kong", "Wenjie Liao", "Chunle Guo", "Chongyi Li", "Radu Timofte",
-  "Liang Li", "Tao Li","...", "Duy-Nam Ly", "...", "Hongwei Xu", "Mingrui Long", "Lulin Tang"
+            "Liang Li", "Tao Li", "...", "Duy-Nam Ly", "...", "Hongwei Xu", "Mingrui Long", "Lulin Tang"
         ],
         "Title": "NTIRE 2025 challenge on Text to Image Generation Model Quality Assessment",
         "Publication": "Proceedings of the Computer Vision and Pattern Recognition Conference",
@@ -187,8 +232,8 @@ export const publications = [
         "Pages": "1-6",
         "Year": "2022",
         "Publisher": "",
-       // "PDF": "https://dl.acm.org/doi/10.1145/3508284.3531350",
-       // "Demo": "https://youtu.be/2b1a3d7k0e4",
+        // "PDF": "https://dl.acm.org/doi/10.1145/3508284.3531350",
+        // "Demo": "https://youtu.be/2b1a3d7k0e4",
         "Venue": "MobileHCI 2022 (Poster)",
         "Link": "https://doi.org/10.1145/3528575.3551436",
         "BibTex": `@inproceedings{ly2022360tourguiding,

@@ -15,21 +15,21 @@ const PublicationPage = () => {
     }, {}) // Reverse to have the latest year first
 
     return (
-        <div className=" main-content">
-            <p className="text-[2em] font-bold mb-[1em]">My Publications</p>
-            {
-                Object.entries(publicationsByYear).reverse().map(([year, pubs]) => (
-                    <div key={year} className="mb-[2em] ">
-                        <p className="text-[1.1em] font-semibold mb-[0.5em]  ">{year}</p>
-                        {
-                            pubs.map((publication, index) => (
-                                <PublicationComponent key={index} publication={publication} />
-                            ))
-                        }
-                    </div>
-                ))
-            }
-        </div>
+            <div className="main-content">
+                <p className="text-[1.5em] font-bold mb-[0.5em]">My Publications</p>
+                {
+                    Object.entries(publicationsByYear).reverse().map(([year, pubs]) => (
+                        <div key={year} className="mb-[1em]">
+                            <p className="text-[0.95em] font-semibold mb-[0.25em]">{year}</p>
+                            {
+                                pubs.map((publication, index) => (
+                                    <PublicationComponent key={index} publication={publication} />
+                                ))
+                            }
+                        </div>
+                    ))
+                }
+            </div>
     );
 };
 

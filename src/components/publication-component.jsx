@@ -11,10 +11,10 @@ const PublicationComponent = ({ publication }) => {
     };
 
     return (
-        <div className="publication-component top-border-line pt-[0.75em] pb-[0.75em] md:pt-[1em] md:pb-[1em]">
+        <div className="publication-component top-border-line pt-[0.4em] pb-[0.4em] md:pt-[0.6em] md:pb-[0.6em]">
             <a target="_blank" rel="noopener noreferrer" href={publication.Link} className="block">
-                <p className="text-[1.2em] sm:text-[1.3em] md:text-[1.4em] lg:text-[1.5em] font-bold leading-tight mb-2">{publication.Title}</p>
-                <div className="text-sm sm:text-base mb-2">
+                <p className="text-[1em] sm:text-[1em] md:text-[1.1em] lg:text-[1.15em] font-bold leading-tight mb-1">{publication.Title}</p>
+                <div className="text-xs sm:text-sm mb-1">
                     {
                         publication.Authors.map((author, index) => (
                             <span key={index}>
@@ -32,12 +32,12 @@ const PublicationComponent = ({ publication }) => {
                         ))
                     }
                 </div>
-                <p className="italic text-sm sm:text-base">
+                <p className="italic text-xs sm:text-sm">
                     {publication.Publication} - <span className="font-bold">{publication.Venue}</span>
                 </p>
             </a>
 
-            <div className="flex flex-row items-center gap-2 sm:gap-3 md:gap-4 mt-3">
+            <div className="flex flex-row items-center gap-1 sm:gap-2 md:gap-3 mt-2">
                 {
                     publication.PDF && <a href={publication.PDF} target="_blank" rel="noopener noreferrer" title="View PDF" className="hover:opacity-70 transition-opacity">
                         <FontAwesomeIcon icon={faFilePdf} size="lg" className="sm:text-xl md:text-2xl" />
