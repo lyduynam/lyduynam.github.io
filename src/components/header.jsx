@@ -7,7 +7,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setShowFixedHeader(window.scrollY > 500); // Show header after 500px scroll
+            setShowFixedHeader(window.scrollY > 300); // Show header after 500px scroll
         };
 
         window.addEventListener("scroll", handleScroll);

@@ -68,7 +68,7 @@ const MenuMobile = () => {
             </ul>
             <button 
                 onClick={toggleMenu}
-                className="text-base absolute top-[3em] right-[2em] bg-gray-200 hover:bg-gray-300 space-x-2 px-4 py-2 rounded cursor-pointer transition-colors"
+                className="text-base absolute top-[0.75em] right-[1em] bg-gray-200 hover:bg-gray-300 space-x-2 px-4 py-2 rounded cursor-pointer transition-colors"
             >
                 <FontAwesomeIcon icon={isExpanded ? faChevronUp : faChevronDown} />
                 <span>{isExpanded ? "Close" : "More"}</span>

@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         <Header />
         <CoverImage />
         <div className="main-container">
-          <div className="flex sm:flex-row flex-col-reverse sm:space-x-24  justify-between  mt-[4em]  h-full px-24">
+          <div className="flex sm:flex-row flex-col-reverse sm:space-x-24  justify-between  mt-[4em]  h-full sm:px-24 px-10">
             <div className="w-full sm:w-[20%]  ">
               <Menu />
             </div>
