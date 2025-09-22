@@ -81,7 +81,7 @@ const CoverImage = () => {
             </div>
 
             {/* Main content container */}
-            <div className="relative z-10 flex mt-24 sm:mt-0 items-center justify-center min-h-screen px-4 sm:px-8 lg:px-16">
+            <div className="relative z-10 flex mt-12 sm:mt-0 items-center justify-center min-h-screen px-4 sm:px-8 lg:px-16">
                 <div className="max-w-6xl w-full">
                     <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
                         {/* Image section */}
