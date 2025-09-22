@@ -32,7 +32,7 @@ const Menu = () => {
     return (
         <div className="menu text-[1em] font-bold ">
             {/* Greeting Section with Icons */}
-            <div className="mb-3 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
+            <div className="mb-3 sm:mt-0 mt-10 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
                 <div className="flex items-center space-x-2 mb-1">
                     <span className="text-base font-semibold text-gray-800">👋 Welcome!</span>
                 </div>
