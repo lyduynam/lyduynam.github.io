@@ -20,12 +20,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a;
     --foreground: #ededed;
     --text-primary: #ededed;
     --text-secondary: #888888;
     --text-active: #88b4ff;
-    --border-color: #333333;
+    --border-color: #333333; */
   }
 }
 
