@@ -89,8 +89,8 @@ const CoverImage = () => {
                             <div className="relative group">
                                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition duration-500"></div>
                                 <Image 
-                                    width={400} 
-                                    height={400} 
+                                    width={1000} 
+                                    height={1000} 
                                     src="/ldnam.jpg" 
                                     alt="Duy-Nam Ly" 
                                     className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full object-cover border-4 border-white/10 shadow-2xl transition-all duration-300 hover:scale-105 hover:border-white/20"
