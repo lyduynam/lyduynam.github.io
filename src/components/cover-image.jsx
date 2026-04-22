@@ -91,7 +91,7 @@ const CoverImage = () => {
                                 <Image 
                                     width={1000} 
                                     height={1000} 
-                                    src="/ldnam.jpg" 
+                                    src="/ldnam-avatar.jpg" 
                                     alt="Duy-Nam Ly" 
                                     className="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full object-cover border-4 border-white/10 shadow-2xl transition-all duration-300 hover:scale-105 hover:border-white/20"
                                 />
