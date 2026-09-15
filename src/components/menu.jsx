@@ -22,7 +22,7 @@ const Menu = () => {
         {
             "link": "/projects",
             "label": "Projects",
-            "disabled": true
+      
         },
         {
             "link": "/publications",

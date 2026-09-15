@@ -1,36 +1,15 @@
+import PageHeading from "@/components/page-heading";
 import PublicationComponent from "@/components/publication-component";
+import Icon from "@/components/icon";
 import { publications } from "@/data/publications";
-
-const PublicationPage = () => {
-    // Step 1: Sort descending by year
-    const sortedPublications = [...publications].sort((a, b) => a.Year - b.Year);
-
-    // Step 2: Group by year
-    const publicationsByYear = sortedPublications.reduce((acc, pub) => {
-        if (!acc[pub.Year]) {
-            acc[pub.Year] = [];
-        }
-        acc[pub.Year].push(pub);
-        return acc;
-    }, {}) // Reverse to have the latest year first
-
-    return (
-            <div className="main-content">
-                <p className="text-[1.5em] font-bold mb-[0.5em]">My Publications</p>
-                {
-                    Object.entries(publicationsByYear).reverse().map(([year, pubs]) => (
-                        <div key={year} className="mb-[1em]">
-                            <p className="text-[0.95em] font-semibold mb-[0.25em]">{year}</p>
-                            {
-                                pubs.map((publication, index) => (
-                                    <PublicationComponent key={index} publication={publication} />
-                                ))
-                            }
-                        </div>
-                    ))
-                }
-            </div>
-    );
-};
-
-export default PublicationPage;
+import { profile } from "@/data/profile";
+import { groupByYear } from "@/lib/content";
+export const metadata = { title: "Full Publications" };
+export default function PublicationsPage() {
+  const grouped = groupByYear(publications);
+  return <>
+    <PageHeading eyebrow="" title="Publications" description="Full peer-reviewed articles and conference papers."><a href={profile.links[0].href} className="button" target="_blank" rel="noreferrer">Google Scholar <Icon name="arrow-up-right" /></a></PageHeading>
+    <div className="archive-toolbar"><p> <span>· * Equal contribution</span></p><nav aria-label="Publication years">{grouped.map(({ year }) => <a key={year} href={`#year-${year}`}>{year}</a>)}</nav></div>
+    <div className="publication-archive">{grouped.map(({ year, entries }) => <section className="archive-year" key={year} aria-labelledby={`year-${year}`}><h2 className="year-label" id={`year-${year}`}>{year}</h2><div className="publication-list">{entries.map(publication => <PublicationComponent key={publication.Link || publication.Title} publication={publication} />)}</div></section>)}</div>
+  </>;
+}

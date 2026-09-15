@@ -1,4 +1,18 @@
 export const publications = [
+    //  {
+    //     "Authors": [
+    //         "Duy-Nam Ly", "Wolfgang Stuerzlinger", "Minh-Triet Tran", "Seungwoo Je", "Khanh-Duy Le"
+    //     ],
+    //     "Title": "Multimodal Technique for Multiple Object Selection in VR (Not a real title name for anonymous review)",
+    //     "Publication": "",
+    //     "Volume": "",
+    //     "Number": "",
+    //     "Pages": "",
+    //     "Year": "2026",
+    //     "Publisher": "",
+    //     "Link": "lassay-CHI2027-under-review",
+    //     "Venue": "CHI 2027 (under review)",
+    //     "BibTex": ``},
     {
         "Authors": [
             "Khanh-Duy Le", "Duy-Nam Ly", "Thanh-Thai La", "Cuong Nguyen", "Morten Fjeld", "Tam V Nguyen", "Minh-Triet Tran"
@@ -21,25 +35,26 @@ export const publications = [
   pages={132},
   year={2025},
   publisher={Springer}
-}}`
+}`
     },
     {
         "Authors": [
             "Thien-Phuc Tran", "Minh-Quang Nguyen", "Minh-Triet Tran", "Tam V Nguyen", "Trong-Le Do", "Duy-Nam Ly", "Viet-Tham Huynh", "Khanh-Duy Le", "Mai-Khiem Tran", "Trung-Nghia Le"
         ],
         "Title": "Event-Enriched Image Analysis Grand Challenge at ACM Multimedia 2025",
-        "Publication": "arXiv preprint arXiv:2508.18904 (2025)",
+        "Publication": "Proceedings of the 33rd ACM International Conference on Multimedia (2025)",
         "Volume": "",
         "Number": "",
-        "Pages": "",
+        "Pages": "14244--14249",
         "Year": "2025",
-        "Venue": "arXiv",
-        "Link": "https://arxiv.org/abs/2508.18904",
+        "Venue": "ACM MM",
+        "Link": "https://dl.acm.org/doi/abs/10.1145/3746027.3762067",
         "Publisher": "",
-        "BibTex": `@article{tran2025event,
-  title={Event-Enriched Image Analysis Grand Challenge at ACM Multimedia 2025},
+        "BibTex": `@inproceedings{tran2025event,
+  title={Event-Enriched Image Analysis Grand Challenge At ACM Multimedia 2025},
   author={Tran, Thien-Phuc and Nguyen, Minh-Quang and Tran, Minh-Triet and Nguyen, Tam V and Do, Trong-Le and Ly, Duy-Nam and Huynh, Viet-Tham and Le, Khanh-Duy and Tran, Mai-Khiem and Le, Trung-Nghia},
-  journal={arXiv preprint arXiv:2508.18904},
+  booktitle={Proceedings of the 33rd ACM International Conference on Multimedia},
+  pages={14244--14249},
   year={2025}
 }
         `
@@ -77,11 +92,11 @@ export const publications = [
         "Publisher": "Springer Nature Singapore Singapore",
         "Venue": "SOICT 2024",
         "Link": "https://doi.org/10.1007/978-981-96-4288-5_26",
-        "BibTex": `@inproceedings{huynh2024voi,
-  title={VOI-VR: Voice-Driven Object Interaction in Virtual Reality with Large Language Models},
-  author={Huynh, Viet-Tham and Ly, Duy-Nam and Nguyen, Hoang-Phuc and Nguyen, Trong-Thuan and Nguyen, Tam V and Tran, Minh-Triet},
+        "BibTex": `@inproceedings{ly2024evaluation,
+  title={Evaluation of AI-Based Assistant Representations on User Interaction in Virtual Explorations},
+  author={Ly, Duy-Nam and Do, Hoai-Nam and Tran, Minh-Triet and Le, Khanh-Duy},
   booktitle={International Symposium on Information and Communication Technology},
-  pages={353--367},
+  pages={323--337},
   year={2024},
   organization={Springer}
 }`
@@ -117,11 +132,11 @@ export const publications = [
         "Publisher": "Springer Nature Singapore Singapore",
         "Venue": "SOICT 2024",
         "Link": "https://doi.org/10.1007/978-981-96-4288-5_28",
-        "BibTex": `@inproceedings{ly2024evaluation,
-  title={Evaluation of AI-Based Assistant Representations on User Interaction in Virtual Explorations},
-  author={Ly, Duy-Nam and Do, Hoai-Nam and Tran, Minh-Triet and Le, Khanh-Duy},
+        "BibTex": `@inproceedings{huynh2024voi,
+  title={VOI-VR: Voice-Driven Object Interaction in Virtual Reality with Large Language Models},
+  author={Huynh, Viet-Tham and Ly, Duy-Nam and Nguyen, Hoang-Phuc and Nguyen, Trong-Thuan and Nguyen, Tam V and Tran, Minh-Triet},
   booktitle={International Symposium on Information and Communication Technology},
-  pages={323--337},
+  pages={353--367},
   year={2024},
   organization={Springer}
 }`
