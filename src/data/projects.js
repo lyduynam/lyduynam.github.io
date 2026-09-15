@@ -9,7 +9,7 @@ import { publications } from "./publications.js";
 // The SVG covers are concept illustrations, not research screenshots.
 const researchProjects = [
   {
-    slug: "beyond-motion-intent", title: "Mobile Robot Transparency Through AR Visualizations", year: "2026",
+    slug: "beyond-motion-intent", title: "Mobile Robot Transparency Through AR Visualizations (updating)", year: "2026",
     // publicationLink: "https://doi.org/10.1007/s10055-025-01206-0",
     tags: ["XR", "HRI"], cover: "/images/projects/beyond-motion-intent-mobile-robot.png",
     note: "CHI 2027 Under Review",
@@ -19,7 +19,7 @@ const researchProjects = [
     overview: "This research explores a collaborative virtual reality system for tour guide training. It brings together immersive environments, collaborative interaction, and the development and evaluation of a training system.",
   },
   {
-    slug: "lassay", title: "Multimodal Technique for Multiple Object Selection in VR", year: "2026",
+    slug: "lassay", title: "Multimodal Technique for Multiple Object Selection in Virtual Reality (updating)", year: "2026",
     // Temporary title for anonymous review; replace with the actual title after the review period.
    // publicationLink: "Under Review",
     tags: ["XR", "Input Technique"], cover: "/images/projects/lassay.png",
@@ -38,7 +38,7 @@ const researchProjects = [
   //   overview: "This research explores a collaborative virtual reality system for tour guide training. It brings together immersive environments, collaborative interaction, and the development and evaluation of a training system.",
   // },
   {
-    slug: "hybridmingler", title: "HybridMingler", year: "2023",
+    slug: "hybridmingler", title: "HybridMingler (updating)", year: "2023",
     publicationLink: "https://doi.org/10.1145/3544549.3585806",
     tags: ["XR", "Collaborative System"], cover: "/images/projects/hybrid-mingler.png",
     imageAlt: "Concept illustration of connected conversation groups at a hybrid conference.",
@@ -46,7 +46,7 @@ const researchProjects = [
     overview: "HybridMingler explores mixed-reality support for mingling at hybrid conferences. It connects immersive interaction with the social experience of meeting other attendees.",
   },
   {
-    slug: "360tourguiding", title: "360TourGuiding: Immersive Collaborative System for Tour Guiding Training", year: "2022",
+    slug: "360tourguiding", title: "360TourGuiding: Immersive Collaborative System for Tour Guiding Trainin (updating)", year: "2022",
     publicationLinks: ["https://doi.org/10.1145/3528575.3551436", "https://doi.org/10.1007/s10055-025-01206-0"],
     tags: ["XR", "Collaborative System"], cover: "/images/projects/360tourguiding.png",
     imageAlt: "Concept illustration of a panoramic landscape viewed through a virtual-reality interface.",
