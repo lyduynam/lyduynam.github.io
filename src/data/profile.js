@@ -6,7 +6,7 @@ export const profile = {
   avatar: "/images/ldnam-avatar.jpg",
   // Add the CV file at public/nam-cv.pdf.
   cv: "/nam-cv.pdf",
-  bio: "I am a researcher in Human–Computer Interaction, exploring how computers can help people. I envision a future in which XR technologies and Robots become increasingly integrated into our daily lives to support a wide range of activities. Driven by this vision, I am particularly interested in creating XR interfaces that enable people to interact with computers, robots, and AI-powered systems for everyday use. Feel free to explore my research, projects, and publications. I am currently seeking a PhD position, so please get in touch if my work aligns with your research interests.",
+  bio: "I am a researcher in Human–Computer Interaction, exploring how computers can help people. I envision a future in which XR technologies and Robots become increasingly integrated into our daily lives to support a wide range of activities. Driven by this vision, I am particularly interested in creating XR interfaces that enable people to interact with computers, robots, and AI-powered systems for everyday use. Feel free to explore my research, projects, and publications. I am currently seeking a PhD position, so please get in touch if my skills and work align with your research interests.",
   links: [
     { label: "Google Scholar", href: "https://scholar.google.com.vn/citations?user=fXfeDqcAAAAJ&hl=en" },
     { label: "LinkedIn", href: "https://www.linkedin.com/in/duy-nam-ly-623520214" },
