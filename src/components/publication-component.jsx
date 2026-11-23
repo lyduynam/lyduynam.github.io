@@ -40,21 +40,11 @@ export default function PublicationComponent({
       )}
 
       <div className="publication-content">
-        <div className="publication-meta">
-          <span className="venue-badge">
-            {publication.Venue || publication.Year}
-          </span>
 
-          {!compact && (
-            <span className="publication-year">
-              {publication.Year}
-            </span>
-          )}
-        </div>
 
         <h3>
           {publication.Link &&
-          publication.Link !== "Under Review" ? (
+            publication.Link !== "Under Review" ? (
             <a
               href={publication.Link}
               target="_blank"
@@ -128,7 +118,20 @@ export default function PublicationComponent({
           {!compact && publication.BibTex && (
             <Bibtex value={publication.BibTex} />
           )}
+          
+          <div>
+            <span className="venue-badge">
+              {publication.Venue || publication.Year}
+            </span>
+
+            {!compact && (
+              <span className="publication-year">
+
+              </span>
+            )}
+          </div>
         </div>
+
       </div>
     </article>
   );

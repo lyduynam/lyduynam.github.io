@@ -47,7 +47,7 @@ export const publications = [
         "Number": "",
         "Pages": "14244--14249",
         "Year": "2025",
-        "Venue": "ACM MM",
+        "Venue": "ACM MM (Workshop)",
         "Link": "https://dl.acm.org/doi/abs/10.1145/3746027.3762067",
         "Publisher": "",
         "BibTex": `@inproceedings{tran2025event,
