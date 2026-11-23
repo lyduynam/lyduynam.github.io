@@ -608,7 +608,7 @@ body { background: #fff; background-image: none; }
 .button { border-radius: 6px; box-shadow: none; }
 .button.primary { box-shadow: none; }
 
-.home-page { width: min(100%, 1000px); }
+.home-page { width: 100%; }
 .home-intro { overflow: visible; grid-template-columns: minmax(0, 1fr) 145px; gap: 48px; margin-top: 0; margin-bottom: 34px; padding: 43px 0 34px; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; background: #fff; box-shadow: none; }
 .home-intro:before, .home-intro:after { display: none; }
 .home-intro h1 { font-size: clamp(40px, 5vw, 55px); font-weight: 800; line-height: 1; letter-spacing: -2.5px; margin: 13px 0 13px; }
@@ -1031,3 +1031,187 @@ a.tag:hover { color: var(--accent); background: var(--surface); border-color: va
   .blog-content blockquote { font-size: 16px; }
 }
 
+
+/* Detail reduction: preserve the existing light/dark color palettes. */
+/* Use whitespace and typography instead of framed decoration. */
+.project-card,
+.recent-publications .publication-item.compact {
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+.project-card:hover,
+.recent-publications .publication-item.compact:hover {
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+.project-card-content { padding: 12px 0 4px; }
+.project-image { border-radius: 6px; }
+.project-card-content > p { margin: 6px 0 0; }
+.project-meta { margin-bottom: 4px; }
+.project-card .tags, .card-venues, .project-open { display: none; }
+.project-card:hover .project-image > img { opacity: 1; }
+.recent-publications { display: block; }
+.recent-publications .publication-item.compact {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+.recent-publications .publication-item.compact:first-child { border-top: 1px solid var(--line); }
+.recent-publications .publication-thumbnail { flex: 0 0 96px; width: 96px; }
+.recent-publications .publication-thumbnail img { width: 96px; height: 67px; border-radius: 4px; }
+.recent-publications .publication-content { padding: 0; }
+.recent-publications .compact.publication-item h3 { font-size: 14px; }
+.recent-publications .publication-actions { margin-top: 5px; }
+.publication-year { font-size: 11px; color: var(--muted); }
+.publication-actions svg { display: none; }
+.compact .update-copy { display: block; }
+.compact .update-item { grid-template-columns: 90px minmax(0,1fr); }
+.blog-card-content .tags, .blog-read-link { display: none; }
+.blog-card-meta { gap: 0; }
+.blog-card { align-items: start; }
+.intro-profile > p { display: none; }
+@media (max-width: 740px) {
+  .recent-publications .publication-item.compact { display: flex; padding: 14px 0; }
+  .recent-publications .publication-thumbnail { flex-basis: 76px; width: 76px; }
+  .recent-publications .publication-thumbnail img { width: 76px; height: 60px; min-height: 0; }
+  .recent-publications .publication-content { padding: 0; }
+  .compact .update-item { grid-template-columns: 74px minmax(0,1fr); }
+}
+
+
+/* Quieter separators: preserve the existing palette and content. */
+/* Publication list: no hover border fading, no duplicated top/bottom rules. */
+.recent-publications .publication-item.compact,
+.recent-publications .publication-item.compact:hover {
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  transform: none;
+  opacity: 1;
+}
+.recent-publications .publication-item.compact:first-child { border-top: 0; }
+.recent-publications .publication-item.compact:last-child { border-bottom: 0; }
+.recent-publications .publication-item.compact:hover img { opacity: 1; }
+
+/* Use whitespace instead of repeated section/card borders. */
+.home-intro { border-bottom: 0; }
+.home-section .compact.update-list { border-top: 0; }
+.compact.update-list .update-item:last-child { border-bottom: 0; }
+.about-layout { border-top: 0; }
+.project-toolbar { border-bottom: 0; }
+.project-card, .project-card:hover { border: 0; box-shadow: none; }
+.blog-list { border-top: 0; }
+.blog-card:last-child { border-bottom: 0; }
+.archive-toolbar { border-top: 0; }
+.publication-archive .publication-item:last-child { border-bottom: 0; }
+
+/* Keep navigation, form controls, and focus indicators visually clear. */
+
+/* Slightly larger profile photo, without changing other styling. */
+.home-intro { grid-template-columns: minmax(0, 1fr) 170px; }
+.profile-avatar { width: 160px; height: 160px; }
+@media (max-width: 740px) {
+  .home-intro { grid-template-columns: minmax(0, 1fr) 116px; }
+  .profile-avatar { width: 112px; height: 112px; }
+}
+@media (max-width: 480px) {
+  .home-intro { display: block; }
+  .home-intro h1 { padding-right: 78px; }
+  .profile-avatar { width: 72px; height: 72px; }
+}
+
+/* Avatar sizing: noticeably larger across breakpoints. */
+.home-intro { grid-template-columns: minmax(0, 1fr) 220px; }
+.intro-profile { width: 220px; max-width: 100%; }
+.profile-avatar { display: block; width: 210px; height: 210px; max-width: none; object-fit: cover; }
+@media (max-width: 740px) {
+  .home-intro { grid-template-columns: minmax(0, 1fr) 152px; }
+  .intro-profile { width: 152px; }
+  .profile-avatar { width: 145px; height: 145px; }
+}
+@media (max-width: 480px) {
+  .home-intro { display: block; }
+  .intro-profile { width: 105px; right: 0; top: 37px; }
+  .profile-avatar { width: 105px; height: 105px; }
+  .home-intro h1 { padding-right: 114px; }
+}
+
+/* Role is shown beneath the avatar instead of beside the intro heading. */
+.intro-profile > p.avatar-role {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+}
+@media (max-width: 480px) {
+  .intro-profile { position: static; margin: 18px 0 0 auto; }
+  .home-intro h1 { padding-right: 0; }
+  .intro-profile > p.avatar-role { font-size: 11px; }
+}
+
+/* Mobile hero: stack the portrait and role above the introduction.
+   Prevent the role from wrapping inside the narrow avatar column. */
+@media (max-width: 600px) {
+  .home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 23px;
+    padding-top: 28px;
+  }
+  .intro-profile {
+    order: -1;
+    position: static;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .profile-avatar {
+    width: 124px;
+    height: 124px;
+    margin: 0 auto;
+  }
+  .intro-profile > p.avatar-role {
+    max-width: none;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .home-intro h1 {
+    padding-right: 0;
+    margin-top: 0;
+  }
+  .intro-copy { min-width: 0; }
+}
+
+/* About: full-width bio with profile links immediately below. */
+.about-page-heading,
+.about-page-heading > div {
+  display: block;
+  width: 100%;
+  max-width: none;
+}
+.about-page-heading .page-description { max-width: none; }
+.about-page-heading .profile-links { margin-top: 20px; }
+@media (max-width: 740px) {
+  .about-page-heading .profile-links { margin-top: 16px; }
+}
+
+/* Larger, centered portrait on small screens. */
+@media (max-width: 600px) {
+  .intro-profile .profile-avatar {
+    width: 164px;
+    height: 164px;
+    max-width: 100%;
+  }
+}

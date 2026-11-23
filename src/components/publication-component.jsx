@@ -119,17 +119,7 @@ export default function PublicationComponent({
             <Bibtex value={publication.BibTex} />
           )}
           
-          <div>
-            <span className="venue-badge">
-              {publication.Venue || publication.Year}
-            </span>
-
-            {!compact && (
-              <span className="publication-year">
-
-              </span>
-            )}
-          </div>
+          <span className="publication-year">{publication.Venue || publication.Year}</span>
         </div>
 
       </div>

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import PageHeading from "@/components/page-heading";
 import Icon from "@/components/icon";
 import { profile, interests, education, experience, skills, academicActivities, otherActivities } from "@/data/profile";
 export const metadata = { title: "About Me" };
@@ -9,7 +8,16 @@ function Timeline({ items }) {
 }
 export default function AboutPage() {
   return <>
-    <PageHeading eyebrow="" title="About me" description={profile.bio}><div className="profile-links">{profile.links.map(link => <a key={link.label} className="text-link muted-link" href={link.href} target="_blank" rel="noreferrer">{link.label} <Icon name="arrow-up-right" size={14} /></a>)}{profile.cv && <a className="text-link muted-link" href={profile.cv} target="_blank" rel="noreferrer">CV <Icon name="file" size={14} /></a>}</div></PageHeading>
+    <header className="page-heading about-page-heading">
+      <div>
+        <h1>About me</h1>
+        <p className="page-description">{profile.bio}</p>
+        <div className="profile-links">
+          {profile.links.map(link => <a key={link.label} className="text-link muted-link" href={link.href} target="_blank" rel="noreferrer">{link.label} <Icon name="arrow-up-right" size={14} /></a>)}
+          {profile.cv && <a className="text-link muted-link" href={profile.cv} target="_blank" rel="noreferrer">CV <Icon name="file" size={14} /></a>}
+        </div>
+      </div>
+    </header>
     <div className="about-layout"><aside className="about-sidebar"><nav aria-label="About me sections"><p className="eyebrow">On this page</p>{sections.map(([id, label]) => <a key={id} href={`#${id}`}>{label}</a>)}</nav></aside><div className="about-content">
       <section className="about-section" id="research-interests"><h2>Research interests</h2><div className="interest-list">{interests.map((interest, index) => <article key={interest.short}><span className="interest-number">0{index + 1}</span><div><h3>{interest.title}</h3><p>{interest.description}</p></div></article>)}</div></section>
       <section className="about-section" id="education"><h2>Education</h2><Timeline items={education} /></section>
