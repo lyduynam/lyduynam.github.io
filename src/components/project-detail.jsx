@@ -30,6 +30,19 @@ function StorySections({ sections }) {
   return sections?.map((section, index) => <section className="detail-section" key={`${section.heading || "section"}-${index}`}>
     {section.heading && <h2>{section.heading}</h2>}
     {section.paragraphs?.map((paragraph, i) => <p key={i}>{paragraph}</p>)}
+     {section.links?.map((link, i) => (
+        <p key={i}>
+          <a
+            href={link.url}
+            className="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label}
+            <Icon name="arrow-up-right" size={15} />
+          </a>
+        </p>
+      ))}
     {section.bullets?.length > 0 && <ul>{section.bullets.map((item, i) => <li key={i}>{item}</li>)}</ul>}
     {section.images?.length > 0 && <div className="project-gallery">{section.images.map((item, i) => <figure key={`${item.src}-${i}`}><SafeImage src={item.src} alt={item.alt || section.heading || "Project image"} />{item.caption && <figcaption>{item.caption}</figcaption>}</figure>)}</div>}
     {section.youtubeUrl && <YouTubeEmbed url={section.youtubeUrl} title={section.heading || "Project"} caption={section.videoCaption} />}
