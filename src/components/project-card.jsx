@@ -9,9 +9,9 @@ export default function ProjectCard({ project }) {
           <SafeImage src={project.cover} alt={project.imageAlt || project.title} />
         </div>
         <div className="project-card-content">
-          <div className="project-meta"><span>{project.year}</span></div>
+          <div className="project-meta"><span>{project.note && <span className="">{project.note}</span>}</span></div>
           <h2>{project.title}</h2>
-          <p>{project.summary}</p>
+        
         </div>
       </Link>
     </article>

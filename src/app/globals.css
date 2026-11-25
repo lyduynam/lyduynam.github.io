@@ -1215,3 +1215,22 @@ a.tag:hover { color: var(--accent); background: var(--surface); border-color: va
     max-width: 100%;
   }
 }
+
+/* Project notes: one quiet inline label, not a description paragraph. */
+.project-note {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 9px;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--accent-soft);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+.project-card-content .project-note { margin-top: 8px; }
+.showcase-header .project-note { margin-top: 15px; }
+/* Media inside custom story sections. */
+.detail-section > .project-gallery { margin-top: 18px; }
+.detail-section > .detail-section { margin-top: 24px; }
