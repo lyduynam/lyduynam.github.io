@@ -10,15 +10,14 @@ import { publications } from "./publications.js";
 // The SVG covers are concept illustrations, not research screenshots.
 const researchProjects = [
   {
-    slug: "beyond-motion-intent", title: "Mobile Robot Transparency Through AR Visualizations", year: "2026",
+    slug: "beyond-motion-intent", title: "Exploring Robot Transparency Through AR Visualizations", year: "2026",
     // publicationLink: "https://doi.org/10.1007/s10055-025-01206-0",
     tags: ["XR", "HRI"], cover: "/images/projects/beyond-motion-intent-mobile-robot.png",
-    note: "on-going",
+    note: "ON-GOING",
 
-    coverCaption: "Concept illustration of connected participants in a panoramic virtual environment.",
+    coverCaption: "Illustration of our AR visualization concepts for robot transparency exploration.",
     summary: "Collaborative virtual reality for practicing tour guiding together.",
-    overview: "This research explores a collaborative virtual reality system for tour guide training. It brings together immersive environments, collaborative interaction, and the development and evaluation of a training system.",
-  },
+overview: "This project explores how augmented reality (AR) visualization concepts can enhance robot transparency and improve human-robot interaction. As part of this work, I developed a mixed reality prototype to investigate how robots' internal representations affect users's mental models.",  },
   {
     slug: "lassay", title: "Novel Technique for Multiple Object Selection in Virtual Reality", year: "2026",
     // Temporary title for anonymous review; replace with the actual title after the review period.
