@@ -3,7 +3,7 @@
 // Categories are free text, e.g. Publication, Career, Talk, Award, or Personal.
 // href is optional and may point to an internal page or an external URL.
 export const updates = [
-  { id: "chi-2027-round-1", date: "2026-11", category: "Paper Decisions", title: "Two CHI 2027 Submissions Passed Round 1", text: "My first-authored paper received a MINOR REVISION decision, while the other received a MAJOR REVISION decision. Under CHI's new review process this year, this is great news for me and my collaborators." },
+  { id: "chi-2027-round-1", date: "2026-11", category: "Paper Decisions", title: "Two CHI Submissions Passed Round 1", text: "My first-authored paper received a MINOR REVISION decision, while the other received a MAJOR REVISION decision. Under CHI's new review process this year, this is great news for me and my collaborators." },
   { id: "end-internship", date: "2026-09", category: "Internship Completion", title: "Completing Internship with 4 CHI submissions", text: "I completed my internship and contributed 4 CHI submissions for IDG. Looking forward to hearing good news." },
   { id: "visiting-at-idg", date: "2026-01", category: "Internship", title: "Visiting Student at IDG (SUSTech)", text: "I joined the IDG lab at SUSTech, China as a visiting student to conduct XR research under the supervision of Prof. Seungwoo Je." },
   { id: "vr-tour-training-2025", date: "2025-08", category: "Paper Acceptance", title: "Full Paper of 360TourGuiding is published in Springer Virtual Reality (Q1)", text: "Our work on the development and evaluation of a collaborative VR training system is published in Springer VR (Q1 Journal).", href: "/projects/360tourguiding" },
