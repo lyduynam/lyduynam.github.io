@@ -22,7 +22,7 @@ overview: "This project explores how augmented reality (AR) visualization concep
     slug: "lassay", title: "Novel Technique for Multiple Object Selection in Virtual Reality", year: "2026",
     // Temporary title for anonymous review; replace with the actual title after the review period.
    // publicationLink: "Under Review",
-    tags: ["XR", "Input Technique"], cover: "/images/projects/lassay.png",
+    tags: ["XR", "Selection Technique"], cover: "/images/projects/lassay.png",
     note: "Under review",
     //youtubeUrl: "https://www.youtube.com/watch?v=HyKfxd-4Ih8",
     
