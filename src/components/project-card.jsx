@@ -11,7 +11,16 @@ export default function ProjectCard({ project }) {
         <div className="project-card-content">
           <div className="project-meta"><span>{project.note && <span className="">{project.note}</span>}</span></div>
           <h2>{project.title}</h2>
-        
+          {project.tags && (
+            <div >
+              {project.tags.map((tag, i) => (
+                <span key={i} className="project-note" style={{ marginRight: "0.2rem" }}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
         </div>
       </Link>
     </article>
