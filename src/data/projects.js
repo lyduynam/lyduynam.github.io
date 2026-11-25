@@ -27,7 +27,7 @@ const researchProjects = [
     note: "Under review",
     //youtubeUrl: "https://www.youtube.com/watch?v=HyKfxd-4Ih8",
     
-    coverCaption: "Concept illustration of our proposed multimodal technique for multiple object selection in virtual reality (VR) environments.",
+    coverCaption: "Concept illustration of our proposed technique for multiple object selection in virtual reality (VR) environments.",
     // abstract: "Your research abstract...",
     overview: "We introduce a novel technique for multiple object selection in virtual reality (VR) environments, which is under review for a flagship conference in HCI (MINOR REVISION - Round 1). Due to the anonymous review process, the title and abstract are temporarily withheld. I provide the video below to showcase my work.",
 
