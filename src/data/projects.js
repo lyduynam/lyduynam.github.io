@@ -20,7 +20,7 @@ const researchProjects = [
     overview: "This research explores a collaborative virtual reality system for tour guide training. It brings together immersive environments, collaborative interaction, and the development and evaluation of a training system.",
   },
   {
-    slug: "lassay", title: "Multimodal Technique for Multiple Object Selection in Virtual Reality", year: "2026",
+    slug: "lassay", title: "Novel Technique for Multiple Object Selection in Virtual Reality", year: "2026",
     // Temporary title for anonymous review; replace with the actual title after the review period.
    // publicationLink: "Under Review",
     tags: ["XR", "Input Technique"], cover: "/images/projects/lassay.png",
