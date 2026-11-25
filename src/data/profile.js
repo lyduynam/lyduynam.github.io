@@ -44,8 +44,8 @@ export const interests = [
   },
 ];
 export const education = [
-  { title: "M.Sc. in Computer Science", organization: "University of Science, VNU-HCM", period: "2023 – 2026", details: ["GPA: 3.81 / 4.0", "Thesis: Voice-enabled Multimodal Technique for Multiple Object Selection in Virtual Reality", "Advisors: Dr. Khanh-Duy Le, Prof. Wolfgang Stuerzlinger (informal)"]  },
-  { title: "B.Sc. in Information Technology", organization: "University of Science, VNU-HCM", period: "2018 – 2022", details: ["GPA: 3.96 / 4.0", "Thesis: Design and Development of an Immersive Collaborative Virtual Environment for Tour Guiding Training", "Advisors: Dr. Khanh-Duy Le, Prof. Minh-Triet Tran, Dr. Cuong Nguyen (informal)"] },
+  { title: "M.Sc. in Computer Science", organization: "University of Science, VNU-HCM", period: "2023 – 2026", details: ["GPA: 3.81 / 4.0   (9.33 / 10.0)", "Thesis: Voice-enabled Multimodal Technique for Multiple Object Selection in Virtual Reality", "Advisors: Dr. Khanh-Duy Le, Prof. Wolfgang Stuerzlinger (informal)"]  },
+  { title: "B.Sc. in Information Technology", organization: "University of Science, VNU-HCM", period: "2018 – 2022", details: ["GPA: 3.96 / 4.0  (9.41 / 10.0)", "Thesis: Design and Development of an Immersive Collaborative Virtual Environment for Tour Guiding Training", "Advisors: Dr. Khanh-Duy Le, Prof. Minh-Triet Tran, Dr. Cuong Nguyen (informal)"] },
 ];
 export const experience = [
    { title: "Visiting Student at IDG, SUSTech, China", organization: "Immersive Design Group (IDG), School of Design, Southern University of Science and Technology, China", period: "Jan 2026 – Sep 2026", details: ["Conducting research on XR technologies, Human-Robot Interaction and Technology for Accessibility."] },
