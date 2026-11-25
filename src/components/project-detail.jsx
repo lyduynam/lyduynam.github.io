@@ -61,7 +61,7 @@ export function ResearchDetail({ project }) {
       {publication?.Authors?.some(author => author.includes("*")) && <p className="contribution-note">* Equal contribution</p>}
       <Resources project={project} />
     </header>
-    <figure className="detail-hero"><SafeImage src={project.cover} alt={project.imageAlt || project.title} eager />{project.coverCaption && <figcaption>{project.coverCaption}</figcaption>}</figure>
+    <figure className="detail-hero"><SafeImage src={project.cover} alt={project.imageAlt || project.title} eager />{project.coverCaption && <figcaption style={{textAlign: "start"}}>{project.coverCaption}</figcaption>}</figure>
     <div className="research-body">
       <DescriptionSections project={project} />
       {project.tags?.length > 0 && <TopicLinks tags={project.tags} />}
