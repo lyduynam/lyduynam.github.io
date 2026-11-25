@@ -5,7 +5,7 @@ export const profile = {
   // Set to "/ldnam-avatar.jpg" if the original photo exists in public/.
   avatar: "/images/ldnam-avatar.jpg",
   // Add the CV file at public/nam-cv.pdf.
-  cv: "/nam-cv.pdf",
+  cv: "/nam-cv-Nov-2026.pdf",
   bio: "I am a researcher in Human–Computer Interaction, exploring how computers can help people. I envision a future in which XR technologies and Robots become increasingly integrated into our daily lives to support a wide range of activities. Driven by this vision, I am particularly interested in creating XR interfaces that enable people to interact with computers, AI-powered systems and robots for everyday use. Feel free to explore my research, projects, and publications.",
   links: [
     { label: "Google Scholar", href: "https://scholar.google.com.vn/citations?user=fXfeDqcAAAAJ&hl=en" },
@@ -53,7 +53,7 @@ export const experience = [
   { title: "Teaching Assistant", organization: "University of Science, VNU-HCM", period: "2022 – Present", details: ["Courses include Introduction to HCI, Object-Oriented Programming, Web Development, Game / 3D Application Development, and Mobile Development."] },
 ];
 export const skills = [
-  { title: "Development", items: ["AR / VR / MR", "Web development", "Mobile development", "ML model deployment", "Mobile Robot Simulation with ROS2 & Unity"] },
+  { title: "Development", items: ["AR / VR / MR", "Web development", "Mobile development", "ML model deployment", "Robot Simulation using ROS2 & Unity"] },
   { title: "Languages & frameworks", items: ["Unity", "React", "C#", "Python", "SQL", "Nav2 (ROS2)"] },
   { title: "Research & design", items: ["System design", "UX design", "User study design", "Statistical analysis"] },
 ];
